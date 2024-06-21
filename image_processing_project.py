@@ -168,7 +168,8 @@ class ImageProcessingApp:
         self.result_frame.pack()
 
     def save_images(self):
-        save_dir = r"C:\Users\sudipta\Desktop\image_pp\image_pp\process_pictures"
+        # need to put your own directory where you want to save the  Process pictures. 
+        save_dir = r"C:\Users\sudipta\Desktop\image_pp\image_pp\process_pictures" 
         os.makedirs(save_dir, exist_ok=True)
 
         for name, img in self.processed_images:
